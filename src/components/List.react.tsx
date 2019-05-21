@@ -1,9 +1,15 @@
 import * as React from 'react';
 
-export interface IProps{}
-export interface IState{}
+export interface IProps
+{
+    
+}
+export interface IState
+{
+    
+}
 
-export class Home extends React.Component<IProps, IState>
+export class List extends React.Component<IProps, IState>
 {
     constructor(props: IProps)
     {
@@ -14,8 +20,9 @@ export class Home extends React.Component<IProps, IState>
 
     public render(): JSX.Element
     {
+        console.log(this.props);
         return (
-            <h1>Home</h1>
+            <h1>List</h1>
         );
     }
 }

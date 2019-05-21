@@ -3,7 +3,7 @@ import * as React from 'react';
 export interface IProps{}
 export interface IState{}
 
-export class Home extends React.Component<IProps, IState>
+export class NotFound extends React.Component<IProps, IState>
 {
     constructor(props: IProps)
     {
@@ -14,8 +14,6 @@ export class Home extends React.Component<IProps, IState>
 
     public render(): JSX.Element
     {
-        return (
-            <h1>Home</h1>
-        );
+        return <h1>404 NOT FOUND</h1>
     }
 }

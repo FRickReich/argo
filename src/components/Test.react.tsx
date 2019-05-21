@@ -3,7 +3,7 @@ import * as React from 'react';
 export interface IProps{}
 export interface IState{}
 
-export class Home extends React.Component<IProps, IState>
+export class Test extends React.Component<IProps, IState>
 {
     constructor(props: IProps)
     {
@@ -15,7 +15,7 @@ export class Home extends React.Component<IProps, IState>
     public render(): JSX.Element
     {
         return (
-            <h1>Home</h1>
+            <h1>Test</h1>
         );
     }
 }
