@@ -54,8 +54,6 @@ export class TodoList extends React.Component<IProps, IState>
             this.newTask.current.value = "";
         }
 
-        console.log(this.state.items);
-
         event.preventDefault();
     };
 
