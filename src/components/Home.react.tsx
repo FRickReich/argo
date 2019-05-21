@@ -1,22 +1,47 @@
 import * as React from 'react';
 
-export interface IProps{}
-export interface IState{}
-
-export class Home extends React.Component<IProps, IState>
+export interface IFrameProps
 {
-    constructor(props: IProps)
+    
+}
+
+interface IFrameState
+{
+    question: string,
+    answer: string
+}
+
+export class Home extends React.Component<IFrameProps, IFrameState>
+{
+    constructor(props: IFrameProps)
     {
         super(props);
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    state: IState = {};
+    state: IFrameState =
+    {
+        question: '',
+        answer: ''
+    };
+
+    handleClick(event: React.MouseEvent<HTMLButtonElement>)
+    {
+        const value = event.currentTarget.value;
+    }
 
     public render(): JSX.Element
     {
         return (
+<<<<<<< HEAD
             <div>
                 <h1>Home</h1>
+=======
+            <div className="frame">
+                test
+                {/*<Button label={'1'} handleClick={this.handleClick} type='input' />*/}
+>>>>>>> parent of e488518... Added router.
             </div>
         );
     }
