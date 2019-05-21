@@ -34,26 +34,8 @@ export class Home extends React.Component<IFrameProps, IFrameState>
     public render(): JSX.Element
     {
         return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             <div>
                 <h1>Home</h1>
-=======
-            <div className="frame">
-                test
-                {/*<Button label={'1'} handleClick={this.handleClick} type='input' />*/}
->>>>>>> parent of e488518... Added router.
-=======
-            <div className="frame">
-                test
-                {/*<Button label={'1'} handleClick={this.handleClick} type='input' />*/}
->>>>>>> parent of e488518... Added router.
-=======
-            <div className="frame">
-                test
-                {/*<Button label={'1'} handleClick={this.handleClick} type='input' />*/}
->>>>>>> parent of e488518... Added router.
             </div>
         );
     }
