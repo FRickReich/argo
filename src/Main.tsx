@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { App } from './App';
-import { Frame } from './components/Frame.react';
+import { Home } from './components/Home.react';
 
 import './style.css';
 
@@ -21,7 +21,7 @@ export class Main extends React.Component<IMainProps, {}>
     {
         return (
             <>
-                 <Frame />
+                 <Home />
             </>
         );
     }
