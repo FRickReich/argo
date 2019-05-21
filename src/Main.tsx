@@ -2,7 +2,7 @@ import * as React from 'react';
 import ReactDOM from 'react-dom'
 
 import { App } from './App';
-import { Home } from './components/Home.react';
+import { TodoList } from './components/TodoList.react';
 
 import './style.css';
 
@@ -22,7 +22,8 @@ export class Main extends React.Component<IMainProps, {}>
     {
         return (
             <>
-                <Home />
+                {/*<p>Hello!</p>*/}
+                <TodoList />
             </>
         );
     }
