@@ -15,7 +15,9 @@ export class Home extends React.Component<IProps, IState>
     public render(): JSX.Element
     {
         return (
-            <h1>Home</h1>
+            <div>
+                <h1>Home</h1>
+            </div>
         );
     }
 }
