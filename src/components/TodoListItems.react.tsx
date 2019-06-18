@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { object } from 'prop-types';
+import FlipMove from "react-flip-move";
 
 import IItem from '../interfaces/IItem';
 
@@ -42,10 +43,13 @@ export class TodoListItems extends React.Component<IProps, IState>
     public render() : JSX.Element
     {
         var todoEntries : Array<IItem> = this.props.entries;
-        var listItems : Array<Object> = todoEntries.map(this.createTasks)
+        var listItems: Array<Object> = todoEntries.map(this.createTasks);
+        
         return (
             <ul className="todolist-itemlist">
-                {listItems}
+                <FlipMove duration={250} easing="ease-out">
+                    {listItems}
+                </FlipMove>
             </ul>
         );
     }

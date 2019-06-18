@@ -59,4 +59,11 @@ body
     margin-bottom: 15px;
     border-radius: 5px;
     list-style: none;
+
+    transition: background-color .2s ease-out;  
+}
+
+.todolist-main .todolist-itemlist li:hover {
+    background: rgba(255, 255, 255, .75);
+    cursor: pointer;
 }
